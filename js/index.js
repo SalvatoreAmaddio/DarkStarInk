@@ -101,13 +101,3 @@ for (let i=0; i < workgroups.length; i++)
 {
     new Workgroup(workgroups[i]); 
 }
-
-const form = document.getElementById("bookingForm");
-const submitButton = document.getElementById("submitButton");
-
-submitButton.addEventListener("click",
-()=>
-{
-    form.submit();
-    form.reset();
-});
