@@ -1,0 +1,123 @@
+:root 
+{
+    --carouselHeight:28rem;
+}
+
+.carousel 
+{
+    background-color: greenyellow;
+    position: relative;
+    overflow: hidden;
+}
+
+.carouselImgContainer 
+{
+    position: relative;
+    display: flow-root;
+    height: var(--carouselHeight);
+}
+
+.carouselImgContainer canvas
+{
+    display: block;
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    max-width: 100%;
+    height: inherit;
+}
+
+.carouselImgContainer img 
+{
+    display: none;
+}
+
+.prevButton, .nextButton
+{
+    position: absolute;
+    font-weight: bolder;
+    padding: 1rem;
+    font-size: 1.25rem;
+    top: 45%;
+    color: black;
+    cursor: pointer;
+    z-index: 3;
+    background-color: white;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    opacity: 0.7;
+}
+
+.prevButton:hover, .nextButton:hover 
+{
+    opacity: 1;
+}
+
+.prevButton
+{
+    left: 0;
+}
+
+.nextButton 
+{
+    right: 0;
+}
+
+.tracker 
+{
+    width: 100%;
+    position: absolute;
+    z-index: 3;
+    padding: 0.3rem;
+    bottom: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+.tracker .thumbnail 
+{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+    background-color: white;
+    border: 0.01rem solid;
+    border-radius: 50%;
+    padding: 0.1rem;
+    display: inline-block;
+    opacity: 0.6;
+}
+
+
+.tracker .currentThumbnail, .tracker .thumbnail:hover
+{
+    opacity: 1;
+    border: 0.1rem solid;
+}
+
+/*MEDIA QUERY*/
+
+@media screen and (max-width: 500.5px)
+{
+    :root 
+    {
+        --carouselHeight:22rem;
+    }
+}
+
+@media screen and (max-width: 442.5px)
+{
+    :root 
+    {
+        --carouselHeight:17rem;
+    }
+}
+
+@media screen and (max-width: 383.5px) 
+{
+    :root 
+    {
+        --carouselHeight:15rem;
+    }
+}
+

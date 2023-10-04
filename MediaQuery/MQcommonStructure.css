@@ -1,0 +1,180 @@
+@media screen and (min-width:9000px) and (max-width:9999.5px) 
+{
+    html 
+    {
+        font-size: 117px;
+    }
+}
+
+@media screen and (min-width:8000px) and (max-width:8999.5px) 
+{
+    html 
+    {
+        font-size: 104px;
+    }
+}
+
+@media screen and (min-width:7000px) and (max-width:7999.5px) 
+{
+    html 
+    {
+        font-size: 91px;
+    }
+}
+
+@media screen and (min-width:6000px) and (max-width:6999.5px) 
+{
+    html 
+    {
+        font-size: 78px;
+    }
+}
+
+@media screen and (min-width:5000px) and (max-width:5999.5px) 
+{
+    html 
+    {
+        font-size: 65px;
+    }
+}
+
+@media screen and (min-width:4000px) and (max-width:4999.5px) 
+{
+    html 
+    {
+        font-size: 52px;
+    }
+}
+
+@media screen and (min-width:3000px) and (max-width:3999.5px) 
+{
+    html 
+    {
+        font-size: 39px;
+    }
+}
+
+@media screen and (min-width:2000px) and (max-width:2999.5px) 
+{
+    html 
+    {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width:1560px) and (max-width:1999.5px) 
+{
+    html 
+    {
+        font-size: 20.1px;
+    }
+}
+
+@media screen and (min-width:1240.5px) and (max-width:1559.5px) 
+{
+    html 
+    {
+        font-size: 16.5px;
+    }
+}
+/*NORMAL SIZES*/
+@media screen and (max-width:500.5px) 
+{
+    #headerPanel section 
+    {
+        padding: 1rem;
+    }
+
+    .layerTitle, .layerContent 
+    {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:442.5px) 
+{
+    html 
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:383.5px) 
+{
+    html 
+    {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:354px) 
+{
+    html 
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:324.5px) 
+{
+    html 
+    {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:295.5px) 
+{
+    html 
+    {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:249.5px) 
+{
+    html 
+    {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:229.5px) 
+{
+    html 
+    {
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:204.5px) 
+{
+    html 
+    {
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:183.5px) 
+{
+    html 
+    {
+        font-size: 7px;
+    }
+}
+
+@media screen and (max-width:159.5px) 
+{
+    html 
+    {
+        font-size: 6px;
+    }
+}
+
+@media screen and (max-width:139.5px) 
+{
+    html 
+    {
+        font-size: 5px;
+    }
+}
