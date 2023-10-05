@@ -237,7 +237,7 @@
 #contactDetails 
 {
     float: left;
-    margin-right: 1rem;
+    padding-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -278,7 +278,6 @@
 
 #checkList 
 {
-    padding: 0.5rem;
     list-style: none;
 }
 
@@ -425,6 +424,14 @@
     }
 }
 
+@media screen and (max-width:855.5px) and (min-width:768px) {
+ 
+    #whatsApp 
+    {
+        display: block;
+    }
+}
+
 @media screen and (max-width:768.5px) 
 {
     .seeMore 
@@ -432,17 +439,11 @@
         float: none;
     }
 
-    #checkListContainer 
-    {
-        float: none;
-        margin-right: 0rem;
-    }
-
     #checkListContainer, #contactDetails 
     {
+        float: none;
+        position: relative;
         width: 100%;
-        margin-right: 0rem;
-        margin-bottom: 1rem;
     }
 
     #important 
