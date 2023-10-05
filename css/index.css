@@ -190,6 +190,7 @@
     width: 3rem;
     height: 3rem;
 }
+
 /*MY WORK*/
 #mywork .layerContent 
 {
@@ -342,6 +343,7 @@
     left: 0;
     top: 0.15rem;
 }
+
 #bookingForm p span
 {
     top: 0rem;
@@ -502,6 +504,7 @@
 
     .pictureBox:hover, .social:hover {
         transform: none;
+        transform: scale(1);
     }
 }
 
