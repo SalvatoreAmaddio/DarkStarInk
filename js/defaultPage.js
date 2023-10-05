@@ -8,9 +8,14 @@ class DefaultPage
 
     constructor(websiteName, showNavBarAt)
     {
-        this.#websiteName=websiteName;
-        this.#navBar= new NavBar(showNavBarAt);
+        this.#websiteName = websiteName;
+        this.#navBar = new NavBar(showNavBarAt);
         this.#updateCopirightYear();
+    }
+
+    get navBar()
+    {
+        return this.#navBar;
     }
 
     addCarousel(carousel)

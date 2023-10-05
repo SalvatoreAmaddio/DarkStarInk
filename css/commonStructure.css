@@ -22,12 +22,24 @@
     width: 20rem;
 }
 
+/*FOOTER*/
+#footer 
+{
+    clear: both;
+    font-size: 0.8rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: white;
+    padding: 0.5rem;
+    background-color: var(--headerFooterColor);
+}
+
+/*MAIN*/
 main section
 {
     margin-top: 1rem;
 }
 
-/*ASIDE*/
 .layer 
 {
     background-color: var(--mainColor);
@@ -57,13 +69,56 @@ main section
     color: black;
 }
 
-#footer 
+/*MEDIA QUERY*/
+@media screen and (min-width:2000.5px) and (max-width:2560px)
 {
-    clear: both;
-    font-size: 0.8rem;
-    margin-top: 1rem;
-    text-align: center;
-    color: white;
-    padding: 0.5rem;
-    background-color: var(--headerFooterColor);
+    html 
+    {
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width:1440px) and (max-width:2000px)
+{
+    html 
+    {
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:500.5px) 
+{
+    #headerPanel section 
+    {
+        padding: 1rem;
+    }
+
+    .layerTitle, .layerContent 
+    {
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width:425.5px) 
+{
+    html 
+    {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:375.5px) 
+{
+    html 
+    {
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:320.5px) 
+{
+    html 
+    {
+        font-size: 12px;
+    }
 }
