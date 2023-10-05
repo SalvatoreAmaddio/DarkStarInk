@@ -325,6 +325,7 @@
 
 #bookingForm p 
 {
+    clear: both;
     padding: 0.2rem;
     font-style: italic;
     font-size: 0.8rem;
@@ -341,11 +342,10 @@
     left: 0;
     top: 0.15rem;
 }
-
-#bookingForm p span 
+#bookingForm p span
 {
-    margin-right: 0rem;
     top: 0rem;
+    margin: 0rem;
 }
 
 #bookingForm input 
@@ -383,37 +383,28 @@
 #clientContactDetails 
 {
     display: flow-root;
-}
-
-#clientContactDetails div:first-child 
-{
-    padding-right: 1rem;
-}
-
-#clientContactDetails div 
-{
-    width: 50%;
     float: left;
+    width: 50%;
+    padding-right: 1rem;
 }
 
 .formMsgContainer 
 {
+    display: flow-root;
+    float: right;
+    width: 50%;
+    height: 100%;
     border-radius: 1rem;
-    margin: 0.5rem 0;
 }
 
 .formMsgContainer textarea 
 {
+    display: block;
     font-size: 1rem;
-}
-
-.formMsgContainer textarea 
-{
     width: 100%;
     resize:none;
-    display: block;
-    border-radius: 1rem;
     border: none;
+    border-radius: 1rem;
     padding: 0.5rem 1rem;
 }
 
@@ -479,15 +470,11 @@
         display: none;
     }
 
-    #clientContactDetails div 
+    #clientContactDetails, .formMsgContainer 
     {
         float: none;
+        padding: 0rem;
         width: 100%;
-    }
-    
-    #clientContactDetails div:first-child 
-    {
-        padding-right: 0rem;
     }
 }
 
