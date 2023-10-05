@@ -337,7 +337,7 @@
 #bookingForm label 
 {
     display: block;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.3rem;
 }
 
 #bookingForm p 
@@ -378,7 +378,7 @@
     font-size: 1rem;
 }
 
-#submitButton
+#bookingForm #submitButton
 {
     display: block;
     width: 100%;
@@ -389,7 +389,8 @@
     color: white;
     font-weight: bold;
     font-size: 1.3rem;
-    margin-bottom: 0rem;
+    margin: 0rem;
+    padding: 0rem;
 }
 
 #submitButton:hover 
