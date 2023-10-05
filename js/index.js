@@ -85,7 +85,7 @@ class Workgroup
     }
 }
 
-const dp = new DefaultPage("Dark Star Ink", 700.5);
+const dp = new DefaultPage("Dark Star Ink", 680);
 const images = 
 [
  "img/img1.jpg",

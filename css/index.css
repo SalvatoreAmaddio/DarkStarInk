@@ -411,8 +411,33 @@
 }
 
 /*MEDIA QUERY*/
-@media screen and (max-width:656.5px) 
+@media (hover: none) 
 {
+    .pictureBox:hover
+    {
+        margin: 1rem 1vw;
+        margin-bottom: 0rem;
+    }
+
+    .pictureBox:hover, .social:hover {
+        transform: none;
+        transform: scale(1);
+    }
+}
+
+@media screen and (max-width:768.5px) 
+{
+    .seeMore 
+    {
+        float: none;
+    }
+
+    #checkListContainer 
+    {
+        float: none;
+        margin-right: 0rem;
+    }
+
     #checkListContainer, #contactDetails 
     {
         width: 100%;
@@ -426,10 +451,7 @@
         top: 0.6rem;
         left: 9.7rem;
     }
-}
 
-@media screen and (max-width:600.5px) 
-{
     #bio 
     {
         padding: 0rem;
@@ -480,35 +502,8 @@
     }
 }
 
-@media screen and (max-width:588.5px) 
-{
-    .seeMore 
-    {
-        float: none;
-    }
 
-    #checkListContainer 
-    {
-        float: none;
-        margin-right: 0rem;
-    }
-}
-
-@media (hover: none) 
-{
-    .pictureBox:hover
-    {
-        margin: 1rem 1vw;
-        margin-bottom: 0rem;
-    }
-
-    .pictureBox:hover, .social:hover {
-        transform: none;
-        transform: scale(1);
-    }
-}
-
-@media screen and (max-width:500.5px)
+@media screen and (max-width:425.5px)
 {
     .workTitle 
     {

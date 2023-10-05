@@ -96,28 +96,26 @@
 }
 
 /*MEDIA QUERY*/
-
-@media screen and (max-width: 500.5px)
+@media screen and (max-width:1024.5px) 
 {
-    :root 
+    :root
+    {
+        --carouselHeight:24rem;
+    }
+}
+
+@media screen and (max-width:375.5px) 
+{
+    :root
+    {
+        --carouselHeight:23rem;
+    }
+}
+
+@media screen and (max-width:320.5px) 
+{
+    :root
     {
         --carouselHeight:22rem;
     }
 }
-
-@media screen and (max-width: 442.5px)
-{
-    :root 
-    {
-        --carouselHeight:17rem;
-    }
-}
-
-@media screen and (max-width: 383.5px) 
-{
-    :root 
-    {
-        --carouselHeight:15rem;
-    }
-}
-
