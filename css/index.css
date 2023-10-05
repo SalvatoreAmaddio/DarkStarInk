@@ -317,6 +317,23 @@
     position: relative;
 }
 
+.formTitle 
+{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: -1rem;
+    left: 0%;
+}
+
+.formTitle h3 
+{
+    background-color: var(--blk);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 0.5rem;
+}
+
 #bookingForm label 
 {
     display: block;
