@@ -242,19 +242,20 @@
 
 #how 
 {
-    margin-bottom: 1rem;
+    line-height: 1.7;
 }
 
 #checkListContainer 
 {
-    padding: 1rem;
     position: relative;
+    padding: 1rem;
+    margin-bottom: 1rem;
     text-align:start;
+    border: 1px solid;
     border-radius: 1rem;
     color: white;
     background-color: var(--blk);
     float: right;
-    border: 1px solid;
 }
 
 #important
@@ -501,7 +502,6 @@
     {
         float: none;
         margin-right: 0rem;
-        margin-bottom: 1rem;
     }
 }
 
