@@ -137,7 +137,7 @@
 #navBarList .dropdownContent a
 {
     text-align: start;
-    padding: 0.5rem;
+    padding: 1.1rem 0.9rem;
 }
 
 .dropdown:hover .dropdownContent { display: block; }
