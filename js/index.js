@@ -104,6 +104,7 @@ for (let i=0; i < workgroups.length; i++)
 }
 
 function submitForm() {
+    
     form.submit();
     form.reset(); 
     return false;
