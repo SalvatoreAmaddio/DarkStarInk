@@ -1,6 +1,5 @@
-@media screen and (max-width: 900.5px)  
+@media screen and (max-width: 768.5px)  
 {
-
     #navBarLogo 
     {
         margin: 0.5rem 0rem;
@@ -10,10 +9,7 @@
     {
         padding: 0.35rem 0.5rem;
     }
-}
-
-@media screen and (max-width: 834.5px)  
-{
+    
     #centerGroup
     {
         position: static;
@@ -21,7 +17,7 @@
     }
 }
 
-@media screen and (max-width: 700.5px)  {
+@media screen and (max-width: 425.5px)  {
  
     #hamburger { display: block; }
     
