@@ -62,7 +62,7 @@
     display: block;
     width: 0%;
     margin: 0 auto;
-    background-color: var(----headerFooterColor);
+    background-color: var(--headerFooterColor);
     animation-duration: 0.5s;
     animation-fill-mode: both;
 }
