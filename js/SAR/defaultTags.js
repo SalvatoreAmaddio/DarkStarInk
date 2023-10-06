@@ -9,14 +9,14 @@ class DefaultTags {
               "defaults/navbar",
             ];
 
-    constructor(...additionalScripts)
+    constructor() //...additionalScripts
     {
-        for(let i=0; i < additionalScripts.length; i++)
-        {   
-            this.#scripts.push(additionalScripts[i]);
-        }
+//        for(let i=0; i < additionalScripts.length; i++)
+//        {   
+//            this.#scripts.push(additionalScripts[i]);
+//        }
         
-        this.#setScripts();
+       // this.#setScripts();
         this.#setAuthor();
         this.#setIcon();
         this.#setDefaultCSS();
@@ -66,5 +66,6 @@ class DefaultTags {
             document.head.appendChild(link);    
         }
     }
-
 }
+
+new DefaultTags();
