@@ -93,7 +93,7 @@ class IndexPage extends DefaultPage
     "img/img2.jpg",
     "img/img3.jpg",
     ];
-
+    #form = document.getElementById("bookingForm");
     #workgroups = document.getElementsByClassName("workGroup");
 
     constructor()
@@ -104,15 +104,16 @@ class IndexPage extends DefaultPage
         {
             new Workgroup(this.#workgroups[i]); 
         }
+
+        this.#form.onsubmit=()=>{return this.submitForm()};
     }
+
+    submitForm() {
+    
+        this.#form.submit();
+        this.#form.reset(); 
+        return false;
+     }
 }
 
 new IndexPage();
-const form = document.getElementById("bookingForm");
-
-function submitForm() {
-    
-    form.submit();
-    form.reset(); 
-    return false;
- }
