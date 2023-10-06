@@ -4,9 +4,9 @@ class DefaultTags {
     #iconLink = document.createElement('link');
     #scripts = ['SAR/SAR','SAR/carousel','SAR/defaultPage'];
 
-    #defCSS = ["wrapper",
-              "commonStructure",
-              "navbar",
+    #defCSS = ["defaults/wrapper",
+              "defaults/commonStructure",
+              "defaults/navbar",
             ];
 
     constructor(...additionalScripts)
@@ -15,6 +15,7 @@ class DefaultTags {
         {   
             this.#scripts.push(additionalScripts[i]);
         }
+        
         this.#setScripts();
         this.#setAuthor();
         this.#setIcon();

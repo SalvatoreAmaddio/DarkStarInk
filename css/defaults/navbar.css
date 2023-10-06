@@ -1,0 +1,232 @@
+/*NavBar*/
+#navBar {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    background: var(--navbarbackground);
+    width: 100%;
+    color: white;
+    position: sticky;
+    z-index: 100;
+    top: 0px;
+}
+
+#navBar .responsiveImg
+{
+    width: 2.4rem;
+    height: 2.4rem;
+}
+
+/*NavBarLogo*/
+#navBarLogo 
+{
+    margin: 0.5rem 0.5rem;
+    display: none;
+    float: left;
+}
+
+#navBarLogo a 
+{
+    cursor: pointer;
+    display: block;
+    width: inherit;
+    height: inherit;
+}
+
+/*NavBarList*/
+#navBarList {
+    background-color: inherit;
+    list-style-type: none;
+    display: flow-root;
+}
+
+#navBarList li {
+    display: block;
+    background-color: inherit;
+    float: left;
+}
+
+#navBarList li a {
+    background-color: inherit;
+    font-weight: bold;
+    text-transform: uppercase;
+    display: block;
+    text-decoration: none;
+    color: var(--white);
+    text-align: center;
+    padding: 1.1rem 0.9rem;
+}
+
+#navBarList li span 
+{
+    padding: 0rem;
+    display: block;
+    width: 0%;
+    margin: 0 auto;
+    background-color: var(--headerFooterColor);
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+}
+
+.animateSpan 
+{
+    animation-name: example;
+}
+
+#navBarList li a:hover 
+{ 
+    background-color:var(--navbarhover);
+}
+
+@keyframes example 
+{
+    0%   {width: 1%; padding: 0.05rem;}
+    100% {width: 100%; padding: 0.05rem;}
+}
+
+#leftGroup
+{
+    width: fit-content;
+    float: left;
+}
+
+#rightGroup
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#rightGroup a
+{
+    padding: 0.5rem 0.9rem;
+    display: inline-block;
+}
+
+#centerGroup
+{
+    width: fit-content;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+/*DropDowns*/
+.dropdown {
+    position: relative;
+}
+
+.dropdownContent {
+    background: var(--navbarbackground);
+    display: none;
+    cursor: pointer;
+    width: fit-content;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+#navBarList .dropdownContent li 
+{
+    float: none;
+}
+
+#navBarList .dropdownContent a
+{
+    text-align: start;
+    padding: 1.1rem 0.9rem;
+}
+
+.dropdown:hover .dropdownContent { display: block; }
+
+.dropdownContent a:hover { background-color:var(--navbarhover); }
+
+/*Hamburger*/
+#hamburgerDropDown {
+    display: flow-root;
+    background-color: inherit;
+    width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+#hamburger {
+    display: none;
+    background-color: inherit;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+#hamburger img {
+    background-color: transparent;
+    width: 2rem;
+    height: 2rem;
+}
+
+/*MEDIA QUERY*/
+@media screen and (max-width: 768.5px)  
+{
+    #navBarLogo 
+    {
+        margin: 0.5rem 0rem;
+    }
+ 
+    #rightGroup a 
+    {
+        padding: 0.35rem 0.5rem;
+    }
+    
+    #centerGroup
+    {
+        position: static;
+        float: left;
+    }
+}
+
+@media screen and (max-width: 680px)  {
+ 
+    #hamburger { display: block; }
+    
+    #navBarList li, #centerGroup, #leftGroup
+    {
+        float: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    #navBar .responsiveImg 
+    {
+        margin: 0em;
+        margin-left: auto;
+    }
+
+    #hamburgerDropDown 
+    {
+        display: none;
+        position: absolute;
+        overflow: visible;
+        left: 0em;
+        padding-bottom: 0.5rem;
+        z-index: 1;
+    }
+
+    #navBarList li a 
+    {
+        text-align: start;
+        padding: 1rem;
+        width: 100%;
+    }
+
+    .dropdownContent 
+    {
+        left: 7rem;
+        top: 0rem;   
+    }
+
+    #navBarList .dropdownContent a {
+        text-align: start;
+        padding: 1rem;
+        width: 100%;
+    }
+}
