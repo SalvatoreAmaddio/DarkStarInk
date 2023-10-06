@@ -393,7 +393,7 @@
     padding: 0rem;
 }
 
-#submitButton:hover 
+#bookingForm #submitButton:hover 
 {
     background-color: var(--grn);
     cursor: pointer;
