@@ -85,23 +85,30 @@ class Workgroup
     }
 }
 
-const dp = new DefaultPage("Dark Star Ink", 680);
-const images = 
-[
- "img/img1.jpg",
- "img/img2.jpg",
- "img/img3.jpg",
-];
-
-dp.addCarousel(new Carousel("carousel1", images));
-
-const workgroups = document.getElementsByClassName("workGroup");
-const form = document.getElementById("bookingForm");
-
-for (let i=0; i < workgroups.length; i++) 
+class IndexPage extends DefaultPage
 {
-    new Workgroup(workgroups[i]); 
+    #images = 
+    [
+    "img/img1.jpg",
+    "img/img2.jpg",
+    "img/img3.jpg",
+    ];
+
+    #workgroups = document.getElementsByClassName("workGroup");
+
+    constructor()
+    {
+        super("Dark Star Ink", 680);
+        this.addCarousel(new Carousel("carousel1", this.#images));
+        for (let i=0; i < this.#workgroups.length; i++) 
+        {
+            new Workgroup(this.#workgroups[i]); 
+        }
+    }
 }
+
+new IndexPage();
+const form = document.getElementById("bookingForm");
 
 function submitForm() {
     

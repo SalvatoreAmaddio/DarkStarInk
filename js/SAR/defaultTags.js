@@ -2,7 +2,7 @@ class DefaultTags {
     #author = "Salvatore Amaddio R.";
     #meta = document.createElement('meta');
     #iconLink = document.createElement('link');
-    #scripts = ['SAR','navBar', 'defaultPage'];
+    #scripts = ['SAR/SAR','SAR/carousel','SAR/defaultPage'];
 
     #defCSS = ["wrapper",
               "commonStructure",
@@ -30,7 +30,13 @@ class DefaultTags {
             script = document.createElement('script');
             script.type = "application/javascript";
             script.src=`js/${this.#scripts[i]}.js`;
-            document.body.appendChild(script);
+            if (i <= 2) 
+            {
+                document.head.appendChild(script);
+            } else 
+            {
+                document.body.appendChild(script);
+            }
         }
     }
 
